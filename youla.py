@@ -285,7 +285,7 @@ def format_status_text(store: Storage, running: bool) -> str:
 # ======= Парсер (внутри процесса) =======
 def build_chrome_options(profile_path: str, proxy: Optional[str]) -> webdriver.ChromeOptions:
     options = webdriver.ChromeOptions()
-#    options.add_argument("--headless=new")
+    options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-blink-features=AutomationControlled")
